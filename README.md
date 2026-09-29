@@ -1,57 +1,64 @@
 # Hi, I'm Sejal 👋
 
-**Data professional turning messy real-world data into decisions — supply chain & operations analytics, data engineering, and applied AI systems.**
+**Data professional turning messy, real-world data into decisions.** My work
+spans supply chain and operations analytics, data engineering, and applied
+AI systems.
 
-🎓 MS in `[your program]`, `[your university]` — expected `[month year]`  <!-- fill in -->
+🎓 MS in Data Science, University of Texas at Arlington (expected May 2026)
 
-I like problems where the data is messy, the stakes are operational, and "it
-works in a notebook" isn't good enough. My projects trace one thread: ingest
-real (often messy, multi-source) data, build a pipeline that survives contact
-with edge cases, and ship something a non-technical stakeholder can actually
-act on — whether that's a delivery ops manager, a grid planner, or a business
-user typing a question in plain English.
+🎯 Open to full-time and internship roles in Data Engineering, Data/Business
+Analytics, Supply Chain & Operations Analytics, and AI/GenAI Engineering.
 
-🎯 **Open to:** Data Engineer · Data/Business Analyst · Supply Chain &
-Operations Analytics · AI/GenAI Engineer — `[Summer 2026 Internship / New Grad — fill in]`
+Across my projects I follow the same process: pull in real, often messy,
+multi-source data, build a pipeline that holds up against edge cases and
+bad inputs, and ship something a non-technical stakeholder can actually use
+to make a decision. That pattern shows up whether the stakeholder is a
+delivery operations manager, a grid planner, or a business user typing a
+question in plain English.
 
 ---
 
 ### ⭐ Featured project
 
-**[Tesla Robotaxi Fleet Intelligence Platform](https://github.com/SejalKhade/tesla-fleet-intelligence-platform)** · [live demo →](https://tesla-fleet-intelligence-platform-mntaopj9vchkb9aekpzqv8.streamlit.app)
-A production-style supply chain analytics platform tackling Tesla robotaxi
-fleet operations: demand-surge prediction, charging-window optimization via
-linear programming, and geofence-expansion risk scoring across Austin,
-Dallas, and Houston — with Claude-assisted interpretation guarded against
-hallucination. Built to show what operational data infrastructure looks like
-when utilization, not just model accuracy, is the metric that matters.
+**[Tesla Robotaxi Fleet Intelligence Platform](https://github.com/SejalKhade/tesla-fleet-intelligence-platform)** ([live demo](https://tesla-fleet-intelligence-platform-mntaopj9vchkb9aekpzqv8.streamlit.app))
+
+A production-style supply chain analytics platform addressing operational
+gaps in Tesla's robotaxi fleet across Austin, Dallas, and Houston. It
+predicts demand surges, optimizes charging windows using linear
+programming, and scores the risk of expanding into new geofences, with
+Claude-assisted interpretation of results that includes a hallucination
+guard. The project was built to show what real operational data
+infrastructure looks like when fleet utilization, not just model accuracy,
+is the metric that matters.
+
 `Python` `Linear Programming` `Streamlit` `Claude` `Supply Chain Analytics`
 
 ---
 
 ### 📦 Supply Chain, Logistics & Transportation Analytics
 
-- **[Tesla Robotaxi Fleet Intelligence Platform](https://github.com/SejalKhade/tesla-fleet-intelligence-platform)** — demand prediction, charging optimization, and expansion risk scoring for an autonomous ride-hailing fleet. *(see above)*
-- **[Texas HSR + Robotaxi: Transportation Supply Cost Analysis](https://github.com/SejalKhade/Texas-HSR-Robotaxi-Transportation-Supply-Cost-Analysis)** — quantifies the cost, emissions, and demand impact of High-Speed Rail with autonomous robotaxi first/last-mile service across 3 Texas corridors. Ingests 7 government datasets (TxDOT, BTS, ERCOT, EPA, Census) with Pandera schema validation, a 1,000-trial Monte Carlo simulation on CO₂ avoidance, 29 passing tests, CI, and a [live dashboard](https://texas-hsr-robotaxi-transportation-supply-cost-analysis-ybo8p2r.streamlit.app/).
-- **[Delivery Insights: Identifying Drivers of Delays](https://github.com/SejalKhade/Delivery-Insights-Identifying-Drivers-of-Delays)** — diagnoses why on-time delivery rate varies across markets (order size, cuisine type, time of day, dasher-to-order ratio) and turns the findings into operational recommendations.
+- **[Tesla Robotaxi Fleet Intelligence Platform](https://github.com/SejalKhade/tesla-fleet-intelligence-platform)** predicts demand, optimizes charging schedules, and scores expansion risk for an autonomous ride-hailing fleet. See the featured section above for details.
+- **[Texas HSR + Robotaxi: Transportation Supply Cost Analysis](https://github.com/SejalKhade/Texas-HSR-Robotaxi-Transportation-Supply-Cost-Analysis)** quantifies the cost, emissions, and demand impact of High-Speed Rail paired with autonomous robotaxi first- and last-mile service across three Texas corridors. It ingests seven government datasets (TxDOT, BTS, ERCOT, EPA, Census), validates them with Pandera schema checks, and runs a 1,000-trial Monte Carlo simulation on CO₂ avoidance, backed by 29 passing tests and CI. See the [live dashboard](https://texas-hsr-robotaxi-transportation-supply-cost-analysis-ybo8p2r.streamlit.app/).
+- **[Delivery Insights: Identifying Drivers of Delays](https://github.com/SejalKhade/Delivery-Insights-Identifying-Drivers-of-Delays)** diagnoses why on-time delivery rates vary across markets, examining order size, cuisine type, time of day, and dasher-to-order ratio, then translates the findings into operational recommendations.
 
 ### 🛠️ Data Engineering & Infrastructure
 
-- **[Power-Outage-Risk-Pipeline](https://github.com/SejalKhade/Power-Outage-Risk-Pipeline)** — end-to-end ML pipeline predicting high-risk electric utilities across 50 US states, combining EIA-861 + NOAA Storm Events data. Deployed via FastAPI + Docker, with CI through GitHub Actions.
-- **[DFW Commercial Rooftop Solar Energy & Grid Readiness Analysis](https://github.com/SejalKhade/DFW-Commercial-Rooftop-Solar-Energy-and-Grid-Readiness-Analysis-)** — geospatial pipeline assessing rooftop solar potential across 8,612 commercial/industrial buildings in 11 DFW counties, integrating OSMnx + Census ACS + EPA eGRID + NREL data. Modeled 15.71M MWh/year of energy potential and $19.56B in installation cost, delivered as an interactive Folium map + Power BI dashboard.
+- **[Power-Outage-Risk-Pipeline](https://github.com/SejalKhade/Power-Outage-Risk-Pipeline)** is an end-to-end ML pipeline that predicts high-risk electric utilities across all 50 US states by combining EIA-861 and NOAA Storm Events data. It's deployed with FastAPI and Docker, with continuous integration through GitHub Actions.
+- **[DFW Commercial Rooftop Solar Energy & Grid Readiness Analysis](https://github.com/SejalKhade/DFW-Commercial-Rooftop-Solar-Energy-and-Grid-Readiness-Analysis-)** is a geospatial pipeline that assesses rooftop solar potential across 8,612 commercial and industrial buildings in 11 DFW counties, integrating OSMnx, Census ACS, EPA eGRID, and NREL data. It modeled 15.71 million MWh per year of energy potential and $19.56 billion in installation cost, delivered through an interactive Folium map and a Power BI dashboard.
 
 ### 🤖 AI/GenAI Systems & Agent Reliability
 
-- **[NL-to-SQL Analytics Agent](https://github.com/SejalKhade/NL-to-SQL-Agent)** — turns plain-English questions into validated DuckDB SQL over 750K+ records, using RAG retrieval + an automated guardrail layer that blocks unsafe or invalid SQL before execution.
-- **[AgentGuard](https://github.com/SejalKhade/AgentGuard)** — pre-execution risk scorer for agentic AI actions: intercepts LLM agent tool calls, scores blast radius, enforces human-approval gates.
-- **[EnterpriseAI-Handoff-Kit](https://github.com/SejalKhade/EnterpriseAI-Handoff-Kit)** — post-deployment observability for RAG systems: retrieval quality, vector store drift, integration reliability monitoring.
-- **[greptile-noise-filter](https://github.com/SejalKhade/greptile-noise-filter)** — filters noisy AI-generated PR review comments using Claude.
+- **[NL-to-SQL Analytics Agent](https://github.com/SejalKhade/NL-to-SQL-Agent)** turns plain-English questions into validated DuckDB SQL over 750K+ records, using RAG retrieval combined with an automated guardrail layer that blocks unsafe or invalid SQL before execution.
+- **[AgentGuard](https://github.com/SejalKhade/AgentGuard)** is a pre-execution risk scorer for agentic AI actions. It intercepts LLM agent tool calls, scores their blast radius, and enforces human-approval gates before risky actions run.
+- **[EnterpriseAI-Handoff-Kit](https://github.com/SejalKhade/EnterpriseAI-Handoff-Kit)** provides post-deployment observability for RAG systems, monitoring retrieval quality, vector store drift, and integration reliability.
+- **[greptile-noise-filter](https://github.com/SejalKhade/greptile-noise-filter)** filters noisy AI-generated PR review comments using Claude.
 
 ### 📊 Also worth a look
 
-Classical ML & experimentation — retail sales forecasting, heart disease risk classification,
-Spotify A/B test analysis, bioinformatics problem sets. See my
-[repositories tab →](https://github.com/SejalKhade?tab=repositories)
+Classical ML and experimentation work, including retail sales forecasting,
+heart disease risk classification, Spotify A/B test analysis, and
+bioinformatics problem sets. See the full list on my
+[repositories tab](https://github.com/SejalKhade?tab=repositories).
 
 ---
 
