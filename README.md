@@ -8,12 +8,16 @@ systems out of messy, real-world data.**
 🎯 Open to full-time and internship roles in Data Engineering, Data/Business
 Analytics, and AI/GenAI Engineering.
 
+📍 Open to relocating anywhere in the US for the right role.
+
 Across my projects I follow the same process: pull in real, often messy,
 multi-source data, build a pipeline that holds up against edge cases and
 bad inputs, and ship something a non-technical stakeholder can actually use
-to make a decision. I also bring hands-on experience applying that same
-process to supply chain and operations problems, from transportation cost
-modeling to delivery performance diagnostics.
+to make a decision. That shows up as production pipelines and AI systems,
+as Power BI, SQL, and Excel dashboards that turn raw data into a decision a
+business owner can act on, and as the same process applied to supply chain
+and operations problems, from transportation cost modeling to delivery
+performance diagnostics.
 
 ---
 
@@ -45,6 +49,13 @@ scans, before it ever touches the database.
 - **[Power-Outage-Risk-Pipeline](https://github.com/SejalKhade/Power-Outage-Risk-Pipeline)** is an end-to-end ML pipeline that predicts high-risk electric utilities across all 50 US states by combining EIA-861 and NOAA Storm Events data. It's deployed with FastAPI and Docker, with continuous integration through GitHub Actions.
 - **[DFW Commercial Rooftop Solar Energy & Grid Readiness Analysis](https://github.com/SejalKhade/DFW-Commercial-Rooftop-Solar-Energy-and-Grid-Readiness-Analysis-)** is a geospatial pipeline that assesses rooftop solar potential across 8,612 commercial and industrial buildings in 11 DFW counties, integrating OSMnx, Census ACS, EPA eGRID, and NREL data. It modeled 15.71 million MWh per year of energy potential and $19.56 billion in installation cost, delivered through an interactive Folium map and a Power BI dashboard.
 
+### 📈 Data Analysis & Business Intelligence
+
+- **[Sales Data Analysis: SQL + Power BI](https://github.com/SejalKhade/Sales-analysis-dashboard_Sql)** builds a sales analytics pipeline from scratch: PostgreSQL for database design, data cleaning, and validation, then Power BI and DAX for an interactive dashboard covering sales performance, team efficiency, and customer behavior.
+- **[E-Commerce Sales Analysis Dashboard](https://github.com/SejalKhade/Sales-Analysis-Dashboard-Excel)** answers a defined set of business requirements in Excel, including total sales by region and segment over 12 months and category-wise profit analysis.
+- **[HR Analytics Dashboard](https://github.com/SejalKhade/Excel-HR_Analytics)** is an interactive Excel dashboard covering employee demographics, attrition analysis, job satisfaction, and education level, built for HR decision-making.
+- **[Spotify Vibe Shift: A/B Test Analysis](https://github.com/SejalKhade/Spotify-Vibe-Shift-A-B-Test-Analysis)** is a product analytics study testing whether emotionally opposite music recommendations increase user engagement and discovery on a streaming platform.
+
 ### 📦 Supply Chain, Logistics & Transportation Analytics
 
 - **[Texas HSR + Robotaxi: Transportation Supply Cost Analysis](https://github.com/SejalKhade/Texas-HSR-Robotaxi-Transportation-Supply-Cost-Analysis)** quantifies the cost, emissions, and demand impact of High-Speed Rail paired with autonomous robotaxi first- and last-mile service across three Texas corridors. It ingests seven government datasets (TxDOT, BTS, ERCOT, EPA, Census), validates them with Pandera schema checks, and runs a 1,000-trial Monte Carlo simulation on CO₂ avoidance, backed by 29 passing tests and CI. See the [live dashboard](https://texas-hsr-robotaxi-transportation-supply-cost-analysis-ybo8p2r.streamlit.app/).
@@ -52,9 +63,9 @@ scans, before it ever touches the database.
 
 ### 📊 Also worth a look
 
-Classical ML and experimentation work, including retail sales forecasting,
-heart disease risk classification, Spotify A/B test analysis, and
-bioinformatics problem sets. See the full list on my
+A few more BI dashboards (Amazon Prime Video, customer/product sales) and
+classical ML work, including retail sales forecasting, heart disease risk
+classification, and bioinformatics problem sets. See the full list on my
 [repositories tab](https://github.com/SejalKhade?tab=repositories).
 
 ---
@@ -62,7 +73,8 @@ bioinformatics problem sets. See the full list on my
 ### 🧰 Tech I work with
 
 `Python` `SQL` `pandas` `scikit-learn` `LangChain` `Anthropic Claude` `RAG`
-`DuckDB` `FastAPI` `Docker` `GitHub Actions` `Streamlit` `Power BI` `GeoPandas`
+`DuckDB` `FastAPI` `Docker` `GitHub Actions` `Streamlit` `Power BI` `DAX`
+`Excel` `GeoPandas`
 
 ### 📫 Reach me
 
