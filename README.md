@@ -4,7 +4,7 @@
 spans supply chain and operations analytics, data engineering, and applied
 AI systems.
 
-🎓 MS in Data Science, University of Texas at Arlington (expected May 2026)
+🎓 MS in Data Science, University of Texas at Arlington 
 
 🎯 Open to full-time and internship roles in Data Engineering, Data/Business
 Analytics, Supply Chain & Operations Analytics, and AI/GenAI Engineering.
