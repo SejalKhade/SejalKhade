@@ -78,4 +78,4 @@ classification, and bioinformatics problem sets. See the full list on my
 
 ### 📫 Reach me
 
-`[LinkedIn URL — https://www.linkedin.com/in/sejallk/]` 
+`[LinkedIn URL — (https://www.linkedin.com/in/sejallk/)]` 
