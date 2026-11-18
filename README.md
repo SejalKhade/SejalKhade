@@ -1,83 +1,75 @@
 # Hi, I'm Sejal 👋
 
-**Data professional building data engineering pipelines and applied AI
-systems out of messy, real-world data.**
+**Data analyst and data engineer. I build pipelines, experiments and AI tools whose numbers hold up when someone checks them.**
 
-🎓 MS in Data Science, University of Texas at Arlington
+🎓 M.S. Data Science, University of Texas at Arlington (May 2026)
 
-🎯 Open to full-time and internship roles in Data Engineering, Data/Business
-Analytics, and AI/GenAI Engineering.
+📍 Fremont, CA · open to relocating anywhere in the US
 
-📍 Open to relocating anywhere in the US for the right role.
+🎯 Open to Data Analyst, Data Engineer, Analytics Engineer and AI Engineer roles
 
-Across my projects I follow the same process: pull in real, often messy,
-multi-source data, build a pipeline that holds up against edge cases and
-bad inputs, and ship something a non-technical stakeholder can actually use
-to make a decision. That shows up as production pipelines and AI systems,
-as Power BI, SQL, and Excel dashboards that turn raw data into a decision a
-business owner can act on, and as the same process applied to supply chain
-and operations problems, from transportation cost modeling to delivery
-performance diagnostics.
+Every project here follows the same rule: messy real-world data in, tested pipeline in the middle, a decision someone can act on at the end. Where a result came out weaker than hoped, the README says so.
 
 ---
 
-### ⭐ Featured project
+### ⭐ Start here
 
-**[NL-to-SQL Analytics Agent](https://github.com/SejalKhade/NL-to-SQL-Agent)**
-
-An AI-powered analytics tool that turns plain-English business questions
-into validated DuckDB SQL over 750K+ records, so non-technical users can
-query the data themselves. RAG retrieval over schema and business
-documentation grounds a Claude-generated query, which then passes through
-an automated guardrail layer that blocks unsafe or invalid SQL, including
-destructive statements, hallucinated tables or columns, and unbounded
-scans, before it ever touches the database.
-
-`Python` `LangChain` `RAG` `Claude` `DuckDB` `Streamlit`
+| If you hire for | Look at | What it shows |
+|---|---|---|
+| **Analytics / Marketing** | [Email Campaign Incrementality](https://github.com/SejalKhade/email-campaign-incrementality) | A real 64,000-customer randomized email test: +7.7 pt visit lift (p < 0.001), $770 incremental revenue per 1,000 emails, and a targeting rule that cuts sends 45% while keeping 89% of lift. SQL, Python, R. |
+| **Data Engineering** | [Construction Job Cost Pipeline](https://github.com/SejalKhade/construction-job-cost-pipeline) | PySpark + dbt + Dagster ELT over $1.35B in budgets: 204,324 cost rows, 1,847 bad rows quarantined, 43 quality checks per run, earned value scores for 60 projects. |
+| **AI Engineering** | [AgentGuard](https://github.com/SejalKhade/AgentGuard) | Pre-execution risk scorer for AI agent tool calls: 4 blast-radius tiers, human approval gates for destructive actions, 72 tests at ~99% coverage. |
 
 ---
 
-### 🤖 AI/GenAI Systems & Agent Reliability
+### 📈 Analytics & Experimentation
 
-- **[NL-to-SQL Analytics Agent](https://github.com/SejalKhade/NL-to-SQL-Agent)** turns plain-English questions into validated DuckDB SQL over 750K+ records, using RAG retrieval combined with an automated guardrail layer that blocks unsafe or invalid SQL before execution. See the featured section above for details.
-- **[AgentGuard](https://github.com/SejalKhade/AgentGuard)** is a pre-execution risk scorer for agentic AI actions. It intercepts LLM agent tool calls, scores their blast radius, and enforces human-approval gates before risky actions run.
-- **[EnterpriseAI-Handoff-Kit](https://github.com/SejalKhade/EnterpriseAI-Handoff-Kit)** provides post-deployment observability for RAG systems, monitoring retrieval quality, vector store drift, and integration reliability.
-- **[Voice QA Harness](https://github.com/SejalKhade/voice-bot-patient-impersonation)** is an automated red-teaming tool that calls a live AI voice agent, drives the conversation with a Claude-powered patient persona designed to probe for weaknesses, and produces evidence-backed defect reports. Every candidate defect passes four verification gates before it can affect a score, and the tool reports what it discarded and why alongside what it kept.
-- **[greptile-noise-filter](https://github.com/SejalKhade/greptile-noise-filter)** filters noisy AI-generated PR review comments using Claude, backed by grounding checks and a full audit trail per comment.
+- **[Email Campaign Incrementality](https://github.com/SejalKhade/email-campaign-incrementality)** measures what two email campaigns *caused* versus a no-email holdout on the Hillstrom randomized test. Checks randomization (SRM, covariate balance), finds the women's email only works on past women's buyers (+7.3 vs +1.1 pts), and replicates every test in R. `SQL` `Python` `R` `statsmodels` `DuckDB`
+- **[Delivery Insights](https://github.com/SejalKhade/Delivery-Insights-Identifying-Drivers-of-Delays)** diagnoses on-time delivery across 197,428 DoorDash orders: Market 1 trails Market 5 by 5.7 pts (p < 0.001), with logistic regression, a KPI tree and a Tableau dashboard. `Python` `SQL` `statsmodels` `Tableau`
+- **[Spotify Vibe Shift A/B Test](https://github.com/SejalKhade/Spotify-Vibe-Shift-A-B-Test-Analysis)** designs a stratified A/B test with simulated treatment effects: +9.7% engagement overall, and a skip-rate guardrail that points to a targeted launch instead of a full rollout. `Python` `SciPy` `scikit-learn`
+- **[Full-Population Control Testing](https://github.com/SejalKhade/Full-Population-Control-Testing-with-Measured-GenAI-Reliability)** tests 6 access controls on all 20,000 synthetic requests instead of a sample, shows a 25-item sample has only a 45.5% chance of finding any exception, and measures Claude's reliability as audit evidence. [Live dashboard](https://sejalkhade-full-population-control-testing--dashboardapp-f337di.streamlit.app/) `Python` `SQL` `Claude` `Streamlit`
+- **[Retail BI: Snowflake + dbt](https://github.com/SejalKhade/retail-bi-snowflake-dbt)** models a Snowflake star schema with dbt marts for revenue by channel, category margin and customer LTV, about 25 dbt tests, served through a Flask API to a D3.js dashboard. `Snowflake` `dbt` `SQL` `Flask` `D3.js`
+- **[Moxie Field Ops Dashboard](https://github.com/SejalKhade/moxie-field-ops-dashboard)** replaces manual Excel joins across field-service tools with a DuckDB star schema and a 5-endpoint API answering ops KPIs in under 200 ms, with 28 tests and an 85% CI coverage gate. `DuckDB` `SQL` `Flask` `D3.js`
 
-### 🛠️ Data Engineering & Infrastructure
+### 🛠️ Data Engineering
 
-- **[Power-Outage-Risk-Pipeline](https://github.com/SejalKhade/Power-Outage-Risk-Pipeline)** is an end-to-end ML pipeline that predicts high-risk electric utilities across all 50 US states, processing 3.44 million raw records from EIA-861 and NOAA Storm Events data down to 1,677 utility-level rows across 28 tracked MLflow experiments. The first models scored a suspicious ROC-AUC of 1.0; tracing it to leakage from SAIDI-derived features and removing them corrected the score to an honest 0.668. Deployed with FastAPI and Docker, with continuous integration through GitHub Actions.
-- **[DFW Commercial Rooftop Solar Energy & Grid Readiness Analysis](https://github.com/SejalKhade/DFW-Commercial-Rooftop-Solar-Energy-and-Grid-Readiness-Analysis-)** is a geospatial pipeline that assesses rooftop solar potential across 8,612 commercial and industrial buildings in 11 DFW counties, integrating OSMnx, Census ACS, EPA eGRID, and NREL data. It modeled 15.71 million MWh per year of energy potential and $19.56 billion in installation cost, delivered through an interactive Folium map and a Power BI dashboard.
+- **[Construction Job Cost Pipeline](https://github.com/SejalKhade/construction-job-cost-pipeline)** ingests daily field cost and schedule files with PySpark, models them in dbt, and orchestrates with Dagster. Every bad row lands in quarantine with a reason; a dbt test proves nothing is lost. `PySpark` `dbt` `Dagster` `DuckDB`
+- **[Recon Sentry](https://github.com/SejalKhade/recon-sentry)** is a dbt reconciliation pipeline that detects 7 types of financial break across merchants, platform and servicers, with 48 dbt tests, runs on DuckDB and Snowflake, orchestrated in Prefect. `dbt` `DuckDB` `Snowflake` `Prefect`
+- **[Power Outage Risk Pipeline](https://github.com/SejalKhade/Power-Outage-Risk-Pipeline)** reduces 3.44M utility-storm records to 1,677 utilities across 28 MLflow experiments. The first models scored a suspicious ROC-AUC of 1.0; tracing it to leakage and removing it gave an honest 0.667. FastAPI, Docker, CI. `Python` `MLflow` `FastAPI` `Docker`
+- **[Battery Cell QC Pipeline](https://github.com/SejalKhade/battery-cell-qc-pipeline)** runs 49,500 simulated sensor readings through a Bronze/Silver/Gold DuckDB pipeline with SPC limits and Isolation Forest, catching 14 of 15 defective cells with no healthy cell failed. `DuckDB` `scikit-learn` `Flask` `D3.js`
+- **[DFW Rooftop Solar & Grid Readiness](https://github.com/SejalKhade/DFW-Commercial-Rooftop-Solar-Energy-and-Grid-Readiness-Analysis-)** combines OpenStreetMap, Census, NREL and EPA data for 8,612 commercial buildings in 11 counties: 15.71M MWh/yr of solar potential and $19.56B install cost, shown in Folium and Power BI. `GeoPandas` `OSMnx` `Power BI`
+- **[Texas HSR + Robotaxi Cost Analysis](https://github.com/SejalKhade/Texas-HSR-Robotaxi-Transportation-Supply-Cost-Analysis)** joins 7 government datasets with Pandera checks and a 1,000-run Monte Carlo: HSR saves $102 per trip vs flying. 29 tests. [Live dashboard](https://texas-hsr-robotaxi-transportation-supply-cost-analysis-ybo8p2r.streamlit.app/) `DuckDB` `Pandera` `Streamlit`
 
-### 📈 Data Analysis & Business Intelligence
+### 🤖 AI / GenAI Systems
 
-- **[Sales Data Analysis: SQL + Power BI](https://github.com/SejalKhade/Sales-analysis-dashboard_Sql)** builds a sales analytics pipeline from scratch: PostgreSQL for database design, data cleaning, and validation, then Power BI and DAX for an interactive dashboard covering sales performance, team efficiency, and customer behavior.
-- **[E-Commerce Sales Analysis Dashboard](https://github.com/SejalKhade/Sales-Analysis-Dashboard-Excel)** answers a defined set of business requirements in Excel, including total sales by region and segment over 12 months and category-wise profit analysis.
-- **[HR Analytics Dashboard](https://github.com/SejalKhade/Excel-HR_Analytics)** is an interactive Excel dashboard covering employee demographics, attrition analysis, job satisfaction, and education level, built for HR decision-making.
-- **[Spotify Vibe Shift: A/B Test Analysis](https://github.com/SejalKhade/Spotify-Vibe-Shift-A-B-Test-Analysis)** is a product analytics study testing whether emotionally opposite music recommendations increase user engagement and discovery on a streaming platform.
+- **[AgentGuard](https://github.com/SejalKhade/AgentGuard)** scores every AI agent tool call before it runs. Read-only calls pass with zero added latency; destructive ones wait for 1 or 2 human approvers. CI checks that it blocks the exact action behind a real 13-hour AWS outage. `FastAPI` `Claude` `Docker`
+- **[NL-to-SQL Analytics Agent](https://github.com/SejalKhade/NL-to-SQL-Agent)** turns plain-English questions into SQL over 750K+ DuckDB rows using RAG on Chroma, then blocks non-SELECT, unknown-column and failed dry-run queries before execution. `LangChain` `Claude` `Chroma` `DuckDB`
+- **[Tier Deep](https://github.com/SejalKhade/tier-deep)** is a 4-agent LangGraph pipeline that maps a company's sub-tier supplier network from 10-K filings and SEC EDGAR, scoring every supplier link on 5 uncertainty signals instead of stating guesses as fact. `LangGraph` `Claude` `Streamlit`
+- **[Job Intelligence Agent](https://github.com/SejalKhade/job-intelligence-agent)** is a 6-node LangGraph agent that scores a resume against a job description and rewrites it, cutting per-role prep from 30-60 min to under 60 sec. `LangGraph` `Claude` `Streamlit`
+- **[EnterpriseAI Handoff Kit](https://github.com/SejalKhade/EnterpriseAI-Handoff-Kit)** monitors a RAG system after handover. Freshness-aware ranking raised retrieval precision from 0.62 to 0.89 with recall unchanged, and SHA-256 checks prove when embedded text has drifted. `ChromaDB` `Python` `Node`
+- **[Greptile Noise Filter](https://github.com/SejalKhade/greptile-noise-filter)** scores AI code-review comments on grounding, actionability, specificity and severity, measuring precision and recall against labeled data instead of claiming them. `Claude` `Streamlit`
 
-### 📦 Supply Chain, Logistics & Transportation Analytics
+### 📦 Supply Chain & Operations
 
-- **[Tier Deep](https://github.com/SejalKhade/tier-deep)** is a four-agent LangGraph pipeline that maps a company's Tier 2 and Tier 3 supplier network from public data, anchored on Tesla for a runnable demo. A discovery agent extracts supplier relationships with source citations, a verification agent cross-references each claim against a second source, and an uncertainty agent scores every inferred relationship with a calibrated confidence score, surfacing concentration-risk chokepoints (like shared sub-tier suppliers) and flagging weakly-sourced claims instead of stating them as fact.
-- **[Texas HSR + Robotaxi: Transportation Supply Cost Analysis](https://github.com/SejalKhade/Texas-HSR-Robotaxi-Transportation-Supply-Cost-Analysis)** quantifies the cost, emissions, and demand impact of High-Speed Rail paired with autonomous robotaxi first- and last-mile service across three Texas corridors. It ingests seven government datasets (TxDOT, BTS, ERCOT, EPA, Census), validates them with Pandera schema checks, and runs a 1,000-trial Monte Carlo simulation on CO₂ avoidance, backed by 29 passing tests and CI. See the [live dashboard](https://texas-hsr-robotaxi-transportation-supply-cost-analysis-ybo8p2r.streamlit.app/).
-- **[Delivery Insights: Identifying Drivers of Delays](https://github.com/SejalKhade/Delivery-Insights-Identifying-Drivers-of-Delays)** diagnoses why on-time delivery rates vary across markets, examining order size, cuisine type, time of day, and dasher-to-order ratio, then translates the findings into operational recommendations.
+- **[AB Fulfillment & Supply Defect Intelligence](https://github.com/SejalKhade/AB-Fulfillment-and-Supply-Defect-Intelligence)** detects defect anomalies in 5.54M simulated shipments with 9 SQL queries, catching all 3 seeded events with zero false positives, and outputs 18 prioritized escalations to a 13-sheet Excel report. `DuckDB` `SQL` `Excel`
+- **[ERP Anomaly Detector](https://github.com/SejalKhade/ERP-anomaly-detector)** runs 5 SQL detectors on a simulated SAP MM dataset of 820 purchase orders, flagging $1M+ in anomalous spend, with a Claude NL-to-SQL app on Hugging Face. `SQL` `DuckDB` `Claude` `Streamlit`
 
 ### 📊 Also worth a look
 
-A few more BI dashboards (Amazon Prime Video, customer/product sales) and
-classical ML work, including retail sales forecasting, heart disease risk
-classification, and bioinformatics problem sets. See the full list on my
-[repositories tab](https://github.com/SejalKhade?tab=repositories).
+Earlier BI work in SQL, Power BI and Excel ([sales analysis](https://github.com/SejalKhade/Sales-analysis-dashboard_Sql), [e-commerce](https://github.com/SejalKhade/Sales-Analysis-Dashboard-Excel), [HR analytics](https://github.com/SejalKhade/Excel-HR_Analytics), [Prime Video](https://github.com/SejalKhade/Amazon-Prime-Video-Dashboard-using-Power-BI)) and classical ML ([retail forecasting](https://github.com/SejalKhade/Retail-sales-forecasting-), [heart disease risk](https://github.com/SejalKhade/Heart-Disease-Prediction-using-Machine-Learning)). Full list on the [repositories tab](https://github.com/SejalKhade?tab=repositories).
 
 ---
 
 ### 🧰 Tech I work with
 
-`Python` `SQL` `pandas` `scikit-learn` `LangChain` `Anthropic Claude` `RAG`
-`DuckDB` `FastAPI` `Docker` `GitHub Actions` `Streamlit` `Power BI` `DAX`
-`Excel` `GeoPandas`
+**Analysis & stats:** `SQL` `Python` `R` `pandas` `statsmodels` `SciPy` `scikit-learn` · A/B and incrementality testing
+
+**Data engineering:** `dbt` `Snowflake` `DuckDB` `PySpark` `Dagster` `Prefect` `Pandera` · GitHub Actions CI
+
+**BI:** `Tableau` `Power BI` `DAX` `Excel` `Streamlit` `D3.js`
+
+**AI:** `Claude API` `LangChain` `LangGraph` `Chroma` `RAG` · `FastAPI` `Docker` `MLflow`
 
 ### 📫 Reach me
 
-[LinkedIn](https://www.linkedin.com/in/sejallk/) · `[Portfolio URL — fill in]`
+[LinkedIn](https://www.linkedin.com/in/sejallk/)
